@@ -15,7 +15,6 @@ def wordDisplay(word, guesses):
     return display_word
 
 def winningCondition(updated_word, turns):
-    # Solution as follows
     if '_' not in updated_word:
         result = 1
         return result
@@ -31,7 +30,7 @@ if __name__ == '__main__':
     time.sleep(0.5)
     
     word = choose_word()
-    turns = len(word)   # number of turns = length of the word to be guessed
+    turns = len(word)   
     guesses = ''
     
     while turns > 0:
